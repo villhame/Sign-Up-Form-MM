@@ -7,7 +7,35 @@
     <title>Monck Ministries</title>
 </head>
 <body>
-    <div class="backgroundImg"></div>
-    
+
+    <div class="bgroundImg"> 
+        <img  src="images/sunset.jpg" alt="sunset image" id="sunset">
+        <div class="logoContainer"> 
+            <img  src="images/mm.png" alt="monck ministries logo" id="logo"> 
+            <div id="logoText"> Monck Ministries </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Let's do this!</h2>
+            <form action="/signup" method="post">
+                <div class="input-row">
+                    <input type="text" id="first-name" placeholder="First Name" required>
+                    <input type="text" id="last-name" placeholder="Last Name" required>
+                </div>
+                <div class="input-row">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="tel" id="phone-number" placeholder="Phone Number">
+                </div>
+                <div class="input-row">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+                </div>
+                <button type="submit">Create Account</button>
+            </form>
+            <p>Already have an account? <a href="/login">Log in</a></p>
+        </div>
+    </div>
 </body>
 </html>
