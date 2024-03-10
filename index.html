@@ -26,7 +26,7 @@
         </div>
         <div class="form-container">
             <h2>Let's do this!</h2>
-            <form action="" method="get">
+            <form id="signup-form" action="" method="get">
                 <div class="input-row">
                     <div class="input-col">
                     <label for='first-name'>First Name:</label>
@@ -51,17 +51,19 @@
                     <div class="input-col">
                     <label for='password'>Password: <strong><span aria-label="required">*</strong> </label></span></label>
                     <input type="password" id="password" placeholder="Password" required>
+                    <div id="password-error" style="display:none;color:red">
+                        Passwords do not match!
+                    </div>
                     </div>
                     <div class="input-col">
                     <label for='password'>Confirm Password: <strong><span aria-label="required">*</span></strong></label>
-                    
                     <input type="password" id="confirm-password" placeholder="Confirm Password" required>
                     </div>
                 </div>
             </form>
         </div>
             <div class="submitButton">
-            <button type="submit">Create Account</button>
+            <button type="submit" onclick="validatePassword()">Create Account</button>
             
             <p>Already have an account? <a href="/login">Log in</a></p>
             </div>
