@@ -18,25 +18,54 @@
     </div>
 
     <div class="container">
+        <div id="buffer2"></div>
+        <div class="blurb"> 
+            "Monck Ministries specializes in providing resources and tools for youth and children's ministries. 
+            Monck Ministries is dedicated to supporting spiritual growth and engagement among younger generations. 
+            Sign up now to get started!"
+        </div>
         <div class="form-container">
             <h2>Let's do this!</h2>
-            <form action="/signup" method="post">
+            <form action="" method="get">
                 <div class="input-row">
+                    <div class="input-col">
+                    <label for='first-name'>First Name:</label>
                     <input type="text" id="first-name" placeholder="First Name" required>
+                    </div>
+                    <div class="input-col">
+                    <label for='last-name'>Last Name:</label>
                     <input type="text" id="last-name" placeholder="Last Name" required>
+                    </div>
                 </div>
                 <div class="input-row">
+                    <div class="input-col">
+                    <label for='email'>Email:</label>
                     <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-col">
+                    <label for='tel'>Phone Number:</label>
                     <input type="tel" id="phone-number" placeholder="Phone Number">
+                    </div>
                 </div>
                 <div class="input-row">
+                    <div class="input-col">
+                    <label for='password'>Password: <strong><span aria-label="required">*</strong> </label></span></label>
                     <input type="password" id="password" placeholder="Password" required>
+                    </div>
+                    <div class="input-col">
+                    <label for='password'>Confirm Password: <strong><span aria-label="required">*</span></strong></label>
+                    
                     <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+                    </div>
                 </div>
-                <button type="submit">Create Account</button>
             </form>
-            <p>Already have an account? <a href="/login">Log in</a></p>
         </div>
+            <div class="submitButton">
+            <button type="submit">Create Account</button>
+            
+            <p>Already have an account? <a href="/login">Log in</a></p>
+            </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
